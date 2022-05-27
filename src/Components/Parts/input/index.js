@@ -1,13 +1,11 @@
 import React from 'react'
-import { FormWrapper, InputTextField } from './styled'
+import { FormWrapper, InputLableField, InputTextField } from './styled'
 
-function Input({type, placeHolder, text}) {
+function Input({type, placeHolder, text, name}) {
   return (
     <FormWrapper>
-        
-        <InputTextField type={type} placeholder={placeHolder} name="fname"></InputTextField>
-        {/* <label for="fname">First name:</label>
-        <input type={type} placeholder={placeHolder} name="fname"></input> */}
+        <InputLableField for={name}>{text}</InputLableField>
+        <InputTextField type={type} placeholder={placeHolder} name={name}></InputTextField>
     </FormWrapper>
   )
 }

@@ -7,10 +7,13 @@ function Wizard() {
   return (
     <div>
 
-      <Input text={'Name'}/>
-      <Tooltip text='traalaaa' position={'bottom'}>
-        <TooltipTarget>I am target ulalal</TooltipTarget>
-      </Tooltip>
+      
+      <Tooltip text='This Field Can Not Be Empty' position={'bottom'}>
+        <TooltipTarget>
+          <Input text={'Name'} type={'Text'} /> 
+          <Input text={'Agree'} type={'checkbox'} /> </TooltipTarget>
+        </Tooltip>
+
     </div>
 
   )
