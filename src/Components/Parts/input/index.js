@@ -1,5 +1,6 @@
 import React from 'react'
-import { FormWrapper, InputLableField, InputTextField } from './styled'
+import { InputTextField } from './styled'
+import { FormWrapper, InputLableField } from '../styled'
 
 function Input({type, placeHolder, text, name}) {
   return (
