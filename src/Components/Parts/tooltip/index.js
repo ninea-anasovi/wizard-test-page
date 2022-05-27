@@ -6,9 +6,9 @@ import { CenterContainer, TooltipBox, TooltipTarget, TooltipWrapper } from './st
 function Tooltip({text, position, children}) {
 
     const [isHovered, setIsHovered] = useState(false);
-    const [isFocused, setIsFocused] = useState(false);
+    const [isSubmited, setIsSubmited] = useState(false);
     const targetRef = useRef(null);
-    const showTooltip = isHovered || isFocused;
+    const showTooltip = isHovered || isSubmited;
     
     return (
 

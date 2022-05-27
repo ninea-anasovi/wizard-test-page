@@ -1,8 +1,14 @@
 import React from 'react'
+import { FormWrapper, InputTextField } from './styled'
 
-function Input() {
+function Input({type, placeHolder, text}) {
   return (
-    <div>Input</div>
+    <FormWrapper>
+        
+        <InputTextField type={type} placeholder={placeHolder} name="fname"></InputTextField>
+        {/* <label for="fname">First name:</label>
+        <input type={type} placeholder={placeHolder} name="fname"></input> */}
+    </FormWrapper>
   )
 }
 

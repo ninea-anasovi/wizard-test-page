@@ -5,8 +5,9 @@ import { TooltipTarget } from '../Parts/tooltip/styled';
 
 function Wizard() {
   return (
-    <div>Wizard
-      <Input/>
+    <div>
+
+      <Input text={'Name'}/>
       <Tooltip text='traalaaa' position={'bottom'}>
         <TooltipTarget>I am target ulalal</TooltipTarget>
       </Tooltip>
