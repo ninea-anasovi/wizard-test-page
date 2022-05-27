@@ -7,7 +7,7 @@ export const TooltipWrapper = styled.div `
 
 export const TooltipTarget = styled.button `
     border: none;
-    background:none;
+    background: inherit;
     padding: 5px;
     margin: -1px;
     color: inherit;
@@ -17,7 +17,7 @@ export const TooltipTarget = styled.button `
 
 export const CenterContainer = styled.div `
     position:absolute;
-    width:200px;
+    width: 200px;
     margin-left: -100px;
     display: flex;
     justify-content: center;
@@ -30,23 +30,23 @@ export const CenterContainer = styled.div `
         switch(position) {
             case 'bottom':
                 return css`
-                bottom: unset;
-                top: calc(100% + 5px);`
+                    bottom: unset;
+                    top: calc(100% + 5px);`
             default:
                 return css`
-                bottom: calc(100% + 5px);`
+                    bottom: calc(100% + 5px);`
         }
     }}
 `;
 
 export const TooltipBox = styled.span `
     position: relative;
-    background-color: red;
+    background-color: #000;
     color: #fff;
     border-radius: 5px;
     text-align: center;
     padding : 10px 8px;
-    font-size: 14px;
+    font-size: 1.25rem;
     box-shadow: 0 4px 14px rgba(0,0,0, 0.15), 0 4px 8px rgba(0,0,0,0.2);
 
     &:after {
