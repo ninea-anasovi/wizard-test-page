@@ -7,7 +7,7 @@ function Wizard() {
   return (
     <div>Wizard
       <Input/>
-      <Tooltip>
+      <Tooltip text='traalaaa' position={'bottom'}>
         <TooltipTarget>I am target ulalal</TooltipTarget>
       </Tooltip>
     </div>
