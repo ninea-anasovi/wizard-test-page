@@ -8,12 +8,12 @@ function Tooltip({text, position, children}) {
     const [isHovered, setIsHovered] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
     const targetRef = useRef(null);
-    const showTooltip = isHovered || isFocused || 1;
+    const showTooltip = isHovered || isFocused;
     
     return (
 
         <TooltipWrapper>
-            <TooltipTarget>
+            <TooltipTarget onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
                 {children}
             </TooltipTarget>
             {showTooltip && (
