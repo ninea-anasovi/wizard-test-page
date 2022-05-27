@@ -87,8 +87,8 @@ export const TooltipBox = styled.span`
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: 10px 8px;
-  font-size: 1.25rem;
+  padding: 10px 15px;
+  font-size: 0.75rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.2);
   ${({ position }) => {
     switch (position) {
