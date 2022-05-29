@@ -1,14 +1,14 @@
 import React from 'react'
 import Quantity from './parts/Quantity'
-import TextInput from './parts/TextInput'
-import Table from './parts/Table'
+import Input from './parts/Input'
+import Table from './parts/itemsTable/Table'
 
 function ItemsStep(props) {
   return (
     <>
-      <div className='grid grid-cols-3 gap-4'>
-        <TextInput text={'Product Name'} textName={'product-name'} type='text'/>
-        <TextInput text={'Price ($)'} textName='price' type={'number'}/>
+      <div className='grid grid-cols-3 gap-4' id='2mmm'>
+        <Input text={'Product Name'} textName={'product-name'} type='text'/>
+        <Input text={'Price ($)'} textName='price' type={'number'}/>
         <Quantity/>
       </div>
       <Table/>

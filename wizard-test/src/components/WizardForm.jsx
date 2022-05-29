@@ -7,10 +7,13 @@ import WizardNavigation from './parts/WizardNavigation';
 
 function WizardForm() {
   return (
-      <StepWizard nav={<WizardNavigation/>} className='container mx-auto bg-slate-100 drop-shadow-xl rounded-lg p-10 mt-20'>
-        <UserStep/>
-        <ItemStep/>
-      </StepWizard>
+      <div className='container mx-auto bg-slate-50 drop-shadow-xl rounded-lg p-10 mt-20'>
+        <StepWizard nav={<WizardNavigation/>} >
+          <UserStep/>
+          <ItemStep/>
+        </StepWizard>
+      </div>
+
   )
 }
 
