@@ -18,7 +18,11 @@ function EditRow({item, setState}) {
           <Input type='number' value={item?.count} onChange={()=>console.log(item?.count)}/>
         </td>
         <td className="px-6 py-4" onClick={event => setState(false)}>
-          <button>Save</button>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </a>
         </td>
         <td className="px-6 py-4" onClick={event => console.log(event.target)}>
             <a href="#">

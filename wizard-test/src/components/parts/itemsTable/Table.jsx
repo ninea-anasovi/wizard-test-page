@@ -45,32 +45,32 @@ function Table() {
   return (
     <div className="container flex justify-center mx-auto mt-5 ">
       <div className="flex flex-col ">
-        <div className="w-full">
+        <div className="w-full ">
           <div className="border-b border-gray-200 shadow rounded-lg">
             <table className="divide-y divide-gray-300 ">
-              <thead className="bg-gray-100">
+              <thead className="bg-blue-400 text-white text-xs">
                 <tr>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2">
                     ID
                   </th>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2 ">
                     Name
                   </th>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2 ">
                     Price
                   </th>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2 ">
                     Count
                   </th>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2 ">
                     Edit
                   </th>
-                  <th className="px-6 py-2 text-xs text-gray-500">
+                  <th className="px-6 py-2 ">
                     Delete
                   </th>
                 </tr>
               </thead>
-              <tbody className="bg-gray-50 divide-y divide-gray-300">
+              <tbody className="bg-slate-100 divide-y divide-gray-300">
                 {
                   data.map((item, index) => (
                     <Row key={index} item={item}/>

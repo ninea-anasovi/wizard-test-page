@@ -5,7 +5,7 @@ import Input from './parts/Input'
 import Comment from './parts/Comment'
 
 
-function UserStep(props) {
+function UserStep() {
 
 
   return (
@@ -14,8 +14,8 @@ function UserStep(props) {
       <Input text={'Last Name'} textName='last-name' type={'text'}/>
       <Input text={'Age'} textName='age' type={'number'}/>
       <Dropdown/>
-      <Checkbox/>
-      <Comment/>
+      <Comment commentName={'comment'} text='Additional Information'/>
+      <Checkbox checkboxName='Agree' title='I agree' description="That, I've read privacy policy and agree the terms."/>
     </div>
   )
 }

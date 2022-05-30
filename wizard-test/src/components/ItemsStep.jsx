@@ -3,7 +3,7 @@ import Quantity from './parts/Quantity'
 import Input from './parts/Input'
 import Table from './parts/itemsTable/Table'
 
-function ItemsStep(props) {
+function ItemsStep() {
   return (
     <>
       <div className='grid grid-cols-3 gap-4' id='2mmm'>
@@ -12,6 +12,7 @@ function ItemsStep(props) {
         <Quantity/>
       </div>
       <Table/>
+      
     </>
 
   )
